@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexbox</title>
+<style media="screen">
+	* {
+    box-sizing: border-box;}
+	
+	.container{
+		width:1020px;
+		margin:0 auto;
+	}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+	background-color: lightgoldenrodyellow
+}
+
+
+.flex-container > div {
+  color: #6497E0;
+  margin: 10px;
+  font-size: 18px;
+  padding: 0 10px 0 10px;
+}
+	
+
+.stack > div {
+		flex-direction:column;
+		padding:20px;
+}
+
+.section_1 {
+    flex-grow: 3;
+}
+
+.makeMeStack > div {
+		flex-direction:row
+		padding:20px;
+	}
+	
+header{
+  width:100%;
+  height:30px;
+  
+}
+footer{
+  width:100%;
+  height:25px;
+  background-color:#F6E430;
+}
+nav{
+  	width:100%;
+  	height:30px;
+	margin:10px 0 10px 0;
+	padding-top: 5px;
+  	background-color:#F6E430;
+	
+}
+	@media (max-width: 1019px){
+		.container{width:90%;}
+		
+		.makeMeStack{
+			flex:100%;
+		}
+	}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+	<script>
+  $( function() {
+    $( "#options" ).accordion();
+  } );
+  </script>
+	
+	
+	</style>
+<link href="main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header><img src="images/Mommy Makes.png" alt="Mommy Makes Logo"></header>
+	<br>
+	<br>
+	<br>
+	
+	<nav >
+		<ul>
+			
+		<li><a href="index.html">About</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="order.html">Order</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		</ul>	
+		
+	</nav>
+
+	<div class="flex-container">
+	<div class="stack section_1">1</div>
+	<div class="stack section_1">2</div>
+	<div class="makeMeStack" style="flex-grow: 1"><p>Mommy Makes is a small business based out of San Antonio, Texas.</p></div>
+	<div class="makeMeStack" style="flex-grow: 1"><p>"Mommy" is Marilyn, who works a full-time job, attends school, and spends as much time with her husband and children as she can.</p></div>
+	<div class="makeMeStack" style="flex-grow: 1"><p>Mommy Makes offers custom branded products to be provided for many reasons, including marketing and gifts.</p></div>
+	
+	<div id="options">
+  <h3>Option 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Option 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Option 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    
+  </div>
+  <h3>Option 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+    </div>
+	
+	
+	
+<footer>mommymakesfunthings@gmail.com</footer>
+</body>
+</html>
